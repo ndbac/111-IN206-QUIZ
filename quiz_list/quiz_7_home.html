@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUAN-DING BEI - ICECREAM SHOP</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        background-color: rgb(255, 203, 203);
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .icecream-card {
+        margin: 30px 30px;
+        background-color: white;
+        max-width: 25%;
+        border-radius: 20px;
+        position: relative;
+        padding-bottom: 30px;
+      }
+      .icecream-card__wrapper {
+        padding: 10px 25px;
+      }
+      .icecream-card__image-container {
+        height: 250px;
+        margin-bottom: 10px;
+      }
+      .icecream-card__image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.2s;
+      }
+      .icecream-card__image-container img:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+      .icecream-card__category {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: pink;
+        margin: auto;
+      }
+      .icecream-card__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+      .icecream-card__heading:hover {
+        cursor: pointer;
+        color: rgb(251, 158, 158);
+      }
+      .icecream-card__description {
+        text-align: justify;
+      }
+      .icecream-card__pricing {
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+      }
+      .icecream-card__pricing__price {
+        font-weight: bold;
+        margin-right: 20px;
+      }
+      .icecream-card__icons {
+        display: flex;
+      }
+      .icecream-card__pricing__cart-icon {
+        border-radius: 100px;
+        color: white;
+        margin: 0 5px;
+        font-size: 20px;
+        padding: 8px;
+        background-color: pink;
+      }
+      .icecream-card__pricing__cart-icon:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_1.png" alt="icecream_1" />
+          </div>
+          <p class="icecream-card__category">Best seller</p>
+          <h1 class="icecream-card__heading">Chocolate Pepper</h1>
+          <p class="icecream-card__description">
+            White chocolate cream with real peppermint for a super cool finish.
+            White chocolate speckles for a poppy little bite. And a touch of sea
+            salt makes this flavor sing like a hallelujah chorus.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_2.png" alt="icecream_2" />
+          </div>
+          <p class="icecream-card__category">Discount 20%</p>
+          <h1 class="icecream-card__heading">Cookies In Cream</h1>
+          <p class="icecream-card__description">
+            Cookies in Cream is our nod to the classic ice cream parlor
+            essential—as good as you remember, but better than it ever was.
+            Deeply chocolaty, truffle-like cookies made using Fair Trade cocoa
+            powder. We first updated this classic in 2013.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_3.png" alt="icecream_3" />
+          </div>
+          <p class="icecream-card__category">Summer sale</p>
+          <h1 class="icecream-card__heading">GREEN MINT CHIP</h1>
+          <p class="icecream-card__description">
+            The vibrant green hue is all-natural, too, made with a leaf called
+            spirulina, and juice from whole fruits and vegetables. Now a
+            signature flavor, we first updated this classic in 2016.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_4.png" alt="icecream_4" />
+          </div>
+          <p class="icecream-card__category">Best seller</p>
+          <h1 class="icecream-card__heading">CREAM PUFF</h1>
+          <p class="icecream-card__description">
+            An ode to one of Jeni's all-time favorite desserts: the giant German
+            cream puff. It took months to perfect the unique, candy-like,
+            single-note vanilla that complements the rich egg custard. A
+            delicate sprinkle of sea salt mimics Bavarian-style cream.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_5.png" alt="icecream_5" />
+          </div>
+          <p class="icecream-card__category">Best choice</p>
+          <h1 class="icecream-card__heading">BOSTON CREAM PIE</h1>
+          <p class="icecream-card__description">
+            Jeni has always had a soft spot for Boston Cream Pie. First for its
+            deep roots in American history—originally made in the 1850s in
+            Boston in an era when the words “cake” and “pie” were
+            interchangeable.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icecream-card">
+        <div class="icecream-card__wrapper">
+          <div class="icecream-card__image-container">
+            <img src="./assets/quiz_7/icecream_6.png" alt="icecream_6" />
+          </div>
+          <p class="icecream-card__category">Best choice</p>
+          <h1 class="icecream-card__heading">PISTACHIO MACARON</h1>
+          <p class="icecream-card__description">
+            Jeni has always been told this flavor tastes like a perfect,
+            pistachio green French macaron cookie. Freshly ground, roasted
+            pistachios infuse the milk and cream with toasty nuttiness. A little
+            honey for mystical, meringue-like texture.
+          </p>
+          <div class="icecream-card__pricing">
+            <p class="icecream-card__pricing__price">Price: $100</p>
+            <div class="icecream-card__icons">
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-shopping-bag"></i>
+              </div>
+              <div class="icecream-card__pricing__cart-icon">
+                <i class="uil uil-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
