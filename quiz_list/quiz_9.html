@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUAN-DING BEI</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container_1 {
+        background-color: rgb(54, 222, 138);
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      .container_2 {
+        display: flex;
+      }
+      .container_2a,
+      .container_2b {
+        background-color: rgb(54, 155, 222);
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+      .container_2c {
+        background-color: rgb(54, 155, 222);
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+      }
+      .container_3a {
+        background-color: rgb(168, 168, 168);
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+      .container_3b {
+        background-color: rgb(168, 168, 168);
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+      }
+      .container_3,
+      .container_a3,
+      .container_b3 {
+        display: flex;
+        width: 100%;
+      }
+      .margin_container {
+        margin-right: 10px;
+      }
+      @media screen and (max-width: 480px) {
+        .container_1 {
+          height: 110px;
+        }
+        .container_2 {
+          display: block;
+        }
+        .container_2a,
+        .container_2b,
+        .container_2c {
+          height: 100px;
+        }
+        .container_3 {
+          display: block;
+          margin-bottom: 0px;
+        }
+        .margin_container {
+          margin-right: 0px;
+        }
+        .container_3a,
+        .container_3b { 
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_1"></div>
+    <div class="container_2">
+      <div class="container_2a"></div>
+      <div class="container_2b"></div>
+      <div class="container_2c"></div>
+    </div>
+    <div class="container_3">
+      <div class="container_a3">
+        <div class="container_3a"></div>
+        <div class="container_3b margin_container"></div>
+      </div>
+      <div class="container_b3">
+        <div class="container_3a"></div>
+        <div class="container_3b"></div>
+      </div>
+    </div>
+  </body>
+</html>
