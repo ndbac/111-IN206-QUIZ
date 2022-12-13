@@ -102,6 +102,51 @@
       .icecream-card__pricing__cart-icon:hover {
         cursor: pointer;
       }
+      @media (max-width: 801px) {
+        .icecream-card {
+          margin: 15px 15px;
+          background-color: white;
+          max-width: 40%;
+          border-radius: 20px;
+          position: relative;
+          padding-bottom: 35px;
+        }
+
+        .icecream-card__image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: transform 0.2s;
+        }
+
+        .icecream-card__image-container {
+          height: 250px;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .icecream-card {
+          margin: 15px 15px;
+          background-color: white;
+          max-width: 60%;
+          border-radius: 20px;
+          position: relative;
+          padding-bottom: 35px;
+        }
+
+        .icecream-card__image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: transform 0.2s;
+        }
+
+        .icecream-card__image-container {
+          height: 250px;
+          margin-bottom: 10px;
+        }
+      }
     </style>
   </head>
   <body>
