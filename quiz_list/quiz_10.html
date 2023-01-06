@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUAN-DING BEI</title>
+    <style>
+      .flex-container {
+        display: flex;
+        align-items: center;
+      }
+      .currencyinput {
+        border: 1px inset #ccc;
+      }
+      .currencyinput input {
+        border: 0;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <input type="number" id="limitingInputField" oninput="limitLength()" />
+      <p>&nbsp;input mask number 12 digits</p>
+    </div>
+    <div class="flex-container">
+      <span class="currencyinput"><input type="number" />$</span>
+      <p>&nbsp;input mask curency is prefex $ (dollar)</p>
+    </div>
+    <script>
+      function limitLength() {
+        var x = document.getElementById("limitingInputField").value;
+        if (x.length > 12) {
+          document.getElementById("limitingInputField").value = x.slice(0, 12);
+        }
+      }
+    </script>
+  </body>
+</html>
